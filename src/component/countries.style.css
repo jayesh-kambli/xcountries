@@ -1,0 +1,28 @@
+
+.Card{
+    border: 2px solid gray;
+    height:max-content;
+    width: 10rem;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardImage{
+    height: 6rem;
+    width: 6rem;
+    /* object-fit: contain; */
+    object-position: center;
+}
+
+.CardName{
+    width: 100%;
+    height: 2rem;
+    text-overflow: ellipsis;
+    text-align: center;
+}
