@@ -19,7 +19,7 @@ export default function Countries() {
         onload();
     }, [])
   const Card = ({ img, alt, name }) => {
-    return (<div key={name} className="Card">
+    return (<div className="Card">
         <img src={img} alt={alt} className="CardImage"/>
         <h3 className="CardName">{name}</h3>
     </div>);
@@ -27,7 +27,7 @@ export default function Countries() {
 
   return (<div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexWrap: "wrap"}}>
     {data.map((ele) => (
-        <Card img={ele.flags.png} alt={ele.flags.alt} name={ele.name.common}/>
+        <Card key={ele.car.cca3} img={ele.flags.png} alt={ele.flags.alt} name={ele.name.common}/>
     ))}
   </div>);
 }
